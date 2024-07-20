@@ -1,0 +1,10 @@
+name: "WU Addon"
+description: "A local addon"
+version: "0.0.1"
+slug: "wu_addon"
+init: false
+arch:
+  - aarch64
+  - amd64
+ports:
+  5959/tcp: 5959

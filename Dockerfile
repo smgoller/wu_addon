@@ -1,7 +1,7 @@
 # Use an official Python runtime as the base image
 FROM python:3.11-alpine
 
-RUN apk add --no-cache chromium-chromedriver
+RUN apk add --no-cache chromium chromium-chromedriver
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 

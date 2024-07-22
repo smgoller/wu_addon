@@ -36,7 +36,7 @@ def get_weather(path):
         #     print(film_title.text)
         return jsonify({'temperature': temperature})
     except Exception as e:
-        return jsonify({'message': 'an error occurred'})
+        return jsonify({'message': f'Unexpected {e=}, {type(e)=}'})
 
 if __name__ == "__main__":
     from waitress import serve
